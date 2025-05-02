@@ -1,37 +1,148 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Polaris Consultoria</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polaris Consultoria</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background-color: #0f0f0f;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #121212;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #333;
+    }
+    header h1 {
+      color: #00e1ff;
+      font-weight: 700;
+      font-size: 28px;
+    }
+    nav a {
+      color: #f0f0f0;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      padding: 100px 40px;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 48px;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 20px;
+      color: #bbbbbb;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h3 {
+      font-size: 32px;
+      color: #00e1ff;
+      margin-bottom: 20px;
+    }
+    .services, .differentials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    footer {
+      text-align: center;
+      padding: 40px;
+      background-color: #121212;
+      border-top: 1px solid #333;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Polaris</h1>
-        <p>Direcionando empresas e pessoas rumo ao sucesso</p>
-    </header>
-    <main>
-        <section>
-            <h2>Quem somos</h2>
-            <p>A Polaris é uma empresa de consultoria que promove o desenvolvimento pessoal e profissional dos colaboradores, integrando inteligência artificial, atendimento humanizado e inovação.</p>
-        </section>
-        <section>
-            <h2>Serviços</h2>
-            <ul>
-                <li>Treinamentos corporativos</li>
-                <li>Relatórios estratégicos</li>
-                <li>Planos de melhoria contínua</li>
-                <li>Consultoria em cultura organizacional</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Visão de Futuro</h2>
-            <p>Nosso objetivo é revolucionar a forma como a tecnologia e o ser humano se relacionam no ambiente profissional, com base em neurociência, administração e física teórica.</p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 Polaris Consultoria Empresarial</p>
-    </footer>
+  <header>
+    <h1>Polaris</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Consultoria Estratégica com Inteligência Humana e Artificial</h2>
+    <p>Desenvolvemos pessoas, otimizamos processos e revolucionamos o atendimento nas empresas. Polaris: o seu norte rumo à excelência.</p>
+  </section>
+  <section id="sobre">
+    <h3>Sobre a Polaris</h3>
+    <p>A Polaris é uma empresa guiada por propósito: conectar tecnologia, neurociência e humanidade para impulsionar resultados corporativos. Oferecemos soluções inteligentes e personalizadas que transformam a cultura organizacional e o desempenho dos times.</p>
+  </section>
+  <section id="servicos">
+    <h3>Serviços</h3>
+    <div class="services">
+      <div class="card">
+        <h4>Consultoria Empresarial</h4>
+        <p>Diagnóstico, estratégia e planos de ação para performance e crescimento.</p>
+      </div>
+      <div class="card">
+        <h4>Treinamentos & Workshops</h4>
+        <p>Capacitações em atendimento humanizado, liderança, soft skills e mais.</p>
+      </div>
+      <div class="card">
+        <h4>Relatórios & Métricas</h4>
+        <p>Análise de indicadores com apoio de IA para decisões assertivas.</p>
+      </div>
+      <div class="card">
+        <h4>Desenvolvimento Humano</h4>
+        <p>Mentorias, integração com neurociência e mapeamento de talentos.</p>
+      </div>
+    </div>
+  </section>
+  <section id="diferenciais">
+    <h3>Diferenciais Polaris</h3>
+    <div class="differentials">
+      <div class="card">
+        <h4>Integração Humano-Máquina</h4>
+        <p>Uso estratégico de IA para apoiar, não substituir, o talento humano.</p>
+      </div>
+      <div class="card">
+        <h4>Base Científica</h4>
+        <p>Fundamentação em neurociência, comportamento e aprendizado.</p>
+      </div>
+      <div class="card">
+        <h4>Atendimento de Excelência</h4>
+        <p>Transformamos a experiência do cliente com empatia e estratégia.</p>
+      </div>
+    </div>
+  </section>
+  <section id="contato">
+    <h3>Contato</h3>
+    <p>Entre em contato conosco para uma proposta personalizada. <br>Email: contato@polaris.com.br</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Polaris Consultoria. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
